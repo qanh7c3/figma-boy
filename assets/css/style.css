@@ -1,10 +1,249 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
+}
+:root{
+  --font-heading:"Sen";
+  --primary-color:#FFB900;
+
 }
 /* khooiphuc cỡ chữ mặc định */
-body{
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
 }
+/* áp dụng chung cho cả trang */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px); /* 34px */
+  margin-right: auto;
+  margin-left: auto;
+}
+.header .body-header {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  /* padding giúp ngdung bấm dc nút ở gần  */
+  padding: 8px 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.nav a:hover {
+  /* text shadow để tạo hiệu ứng in đậm khi bấm */
+  text-shadow: 1px 0 0 currentColor;
+  font-weight: 600;
+  letter-spacing: 0%;
+}
+.nav li.active a::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 21px;
+  width: 21px;
+  height: 2px;
+  opacity: 1;
+  border-radius: 1px;
+  background-color: #171100;
+}
+.btn {
+  display: inline-block;
+  color: #fff;
+  line-height: 50px;
+  min-width: 118px;
+  padding: 0 16px;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 1.6rem;
+  letter-spacing: 0%;
+  text-align: center;
+
+  border-radius:1000PX;
+  background: #171100;
+}
+.btn:hover{
+  opacity: 0.9;
+}
+.header .btn-signup {
+  min-width: 144px;
+}
+.header.fixed .action{
+  margin-left: 49px;
+}
+.header {
+  /* background: #FFFCF4; */
+  background: #fffcf4;
+}
+.header.fixed {
+  position: sticky;
+  z-index: 1;
+  top: -28px;
+}
+.hero {
+  padding-top: 56px 0 65px;
+  background: #fffcf4;
+  
+}
+.hero .body{
+    display: flex;
+}
+/* hero left */
+.hero .media-block{
+    position: relative;
+    width: 48%;
+}
+
+.hero .content-block{
+    width: 52%;
+}
+.hero .hero-summary{
+    padding: 24px;
+    width: 270px;
+border-radius: 12px;
+box-shadow: 0px 16px 32px 0px #0000000D;
+background: #fff;
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+}
+.hero-summary .item{
+    display: flex;
+    align-items: center;
+}
+.hero-summary .icon{
+    width: 48px;
+height: 48px;
+border-radius: 50%;
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+.hero-summary .item +.item{
+  margin-top: 22px ;
+}
+.hero-summary .icon1{
+  background-color: #FFF9E8;
+}
+.hero-summary .icon2{
+  background-color: #FCEFFF;
+;
+}
+.hero-summary .icon3{
+  background-color: #EBEAFF;
+}
+.hero-summary .info{
+  margin-left: 16px;
+}
+.hero-summary .label{
+  font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 1.4rem;
+
+line-height: 1.86;
+letter-spacing: 0%;
+}
+.hero-summary .title{
+  font-family: Poppins;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 1.8rem;
+line-height:1.66;
+letter-spacing: 0%;
+}       
+/* hero right */
+.hero .content-block{
+  width: 52%;
+  padding-left: 130px;
+  margin-top: 64px;
+}
+.hero .heading{
+  font-family: var(--font-heading);
+font-weight: 700;
+font-style: Bold;
+font-size: 5.8rem;
+line-height: 1.172;
+letter-spacing: -1.16px;
+
+}
+.hero .desc{
+  font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 1.8rem;
+line-height: 1.66;
+letter-spacing: 0%;
+margin-top: 22px;
+}
+.hero .cta-group{
+  display: flex;
+  align-items: center; 
+  margin-top: 38px;
+}
+.hero-cta{
+  min-width: 180px;
+  background-color: var(--primary-color);
+  line-height: 64px;
+}
+.hero .watch-video{
+  margin-left:28px ;
+  border: none;
+  align-items: center;
+  background: transparent;
+   display:flex; 
+   cursor: pointer;
+}
+.hero .watch-video .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+height: 40px;
+box-shadow: 0px 8px 16px 0px #00000012;
+opacity: 1;
+border-radius: 40px;
+
+}
+.hero .watch-video span{
+  font-family: Poppins;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 1.8rem;
+line-height: 1.667;
+letter-spacing: 0%;
+margin-left: 14px;
+}
+.hero .desc-recent{
+  margin-top: 48px;
+}
+.hero .stat{
+  margin-top: 8px;
+}
+.hero .stat strong{
+  margin-right: 15px;
+  color:#171100;
+  font-family: var(--font-heading) ;
+  font-size: 4.4rem ;
+  font-weight: 700;
+  line-height: 1.23;
+}
+.hero .stat strong:last-child{
+  margin-left: 28px ;
+}
+
+
