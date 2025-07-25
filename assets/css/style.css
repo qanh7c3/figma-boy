@@ -4,10 +4,9 @@
 html {
   font-size: 62.5%;
 }
-:root{
-  --font-heading:"Sen";
-  --primary-color:#FFB900;
-
+:root {
+  --font-heading: "Sen";
+  --primary-color: #ffb900;
 }
 /* khooiphuc cỡ chữ mặc định */
 body {
@@ -18,15 +17,14 @@ body {
 a {
   text-decoration: none;
 }
-.heading-lv2{
+.heading-lv2 {
   font-family: var(--font-heading);
-font-weight: 700;
-font-style: Bold;
-font-size: 3.8rem;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 3.8rem;
 
-line-height: 1.27;
-letter-spacing: -2%;
-
+  line-height: 1.27;
+  letter-spacing: -2%;
 }
 .main-content {
   width: 1170px;
@@ -83,16 +81,17 @@ letter-spacing: -2%;
   letter-spacing: 0%;
   text-align: center;
 
-  border-radius:1000PX;
+  border-radius: 1000px;
   background: #171100;
 }
-.btn:hover{
+.btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 .header .btn-signup {
   min-width: 144px;
 }
-.header.fixed .action{
+.header.fixed .action {
   margin-left: 49px;
 }
 .header {
@@ -107,191 +106,262 @@ letter-spacing: -2%;
 .hero {
   padding-top: 56px 0 65px;
   background: #fffcf4;
-  
 }
-.hero .body{
-    display: flex;
+.hero .body {
+  display: flex;
 }
 /* hero left */
-.hero .media-block{
-    position: relative;
-    width: 48%;
+.hero .media-block {
+  position: relative;
+  width: 48%;
 }
 
-.hero .content-block{
-    width: 52%;
+.hero .content-block {
+  width: 52%;
 }
-.hero .hero-summary{
-    padding: 24px;
-    width: 270px;
-border-radius: 12px;
-box-shadow: 0px 16px 32px 0px #0000000D;
-background: #fff;
-    position: absolute;
-    bottom: 48px;
-    right: 0;
+.hero .hero-summary {
+  padding: 24px;
+  width: 270px;
+  border-radius: 12px;
+  box-shadow: 0px 16px 32px 0px #0000000d;
+  background: #fff;
+  position: absolute;
+  bottom: 48px;
+  right: 0;
 }
-.hero-summary .item{
-    display: flex;
-    align-items: center;
+.hero-summary .item {
+  display: flex;
+  align-items: center;
 }
-.hero-summary .icon{
-    width: 48px;
-height: 48px;
-border-radius: 50%;
-display: flex; 
-justify-content: center;
-align-items: center;
+.hero-summary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero-summary .item +.item{
-  margin-top: 22px ;
+.hero-summary .item + .item {
+  margin-top: 22px;
 }
-.hero-summary .icon1{
-  background-color: #FFF9E8;
+.hero-summary .icon1 {
+  background-color: #fff9e8;
 }
-.hero-summary .icon2{
-  background-color: #FCEFFF;
-;
+.hero-summary .icon2 {
+  background-color: #fcefff;
 }
-.hero-summary .icon3{
-  background-color: #EBEAFF;
+.hero-summary .icon3 {
+  background-color: #ebeaff;
 }
-.hero-summary .info{
+.hero-summary .info {
   margin-left: 16px;
 }
-.hero-summary .label{
+.hero-summary .label {
   font-family: Poppins;
-font-weight: 400;
-font-style: Regular;
-font-size: 1.4rem;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.4rem;
 
-line-height: 1.86;
-letter-spacing: 0%;
+  line-height: 1.86;
+  letter-spacing: 0%;
 }
-.hero-summary .title{
+.hero-summary .title {
   font-family: Poppins;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 1.8rem;
-line-height:1.66;
-letter-spacing: 0%;
-}       
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 1.8rem;
+  line-height: 1.66;
+  letter-spacing: 0%;
+}
 /* hero right */
-.hero .content-block{
+.hero .content-block {
   width: 52%;
   padding-left: 130px;
   margin-top: 64px;
 }
-.hero .heading{
+.hero .heading {
   font-family: var(--font-heading);
-font-weight: 700;
-font-style: Bold;
-font-size: 5.8rem;
-line-height: 1.172;
-letter-spacing: -1.16px;
-
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 5.8rem;
+  line-height: 1.172;
+  letter-spacing: -1.16px;
 }
-.hero .desc{
+.hero .desc {
   font-family: Poppins;
-font-weight: 400;
-font-style: Regular;
-font-size: 1.8rem;
-line-height: 1.66;
-letter-spacing: 0%;
-margin-top: 22px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.8rem;
+  line-height: 1.66;
+  letter-spacing: 0%;
+  margin-top: 22px;
 }
-.hero .cta-group{
+.hero .cta-group {
   display: flex;
-  align-items: center; 
+  align-items: center;
   margin-top: 38px;
 }
-.hero-cta{
+.hero-cta {
   min-width: 180px;
   background-color: var(--primary-color);
   line-height: 64px;
 }
-.hero .watch-video{
-  margin-left:28px ;
+.hero .watch-video {
+  margin-left: 28px;
   border: none;
   align-items: center;
   background: transparent;
-   display:flex; 
-   cursor: pointer;
+  display: flex;
+  cursor: pointer;
 }
-.hero .watch-video .icon{
+.hero .watch-video .icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
-height: 40px;
-box-shadow: 0px 8px 16px 0px #00000012;
-opacity: 1;
-border-radius: 40px;
-
+  height: 40px;
+  box-shadow: 0px 8px 16px 0px #00000012;
+  opacity: 1;
+  border-radius: 40px;
 }
-.hero .watch-video span{
+.hero .watch-video span {
   font-family: Poppins;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 1.8rem;
-line-height: 1.667;
-letter-spacing: 0%;
-margin-left: 14px;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 1.8rem;
+  line-height: 1.667;
+  letter-spacing: 0%;
+  margin-left: 14px;
 }
-.hero .desc-recent{
+.hero .desc-recent {
   margin-top: 48px;
 }
-.hero .stat{
+.hero .stat {
   margin-top: 8px;
 }
-.hero .stat strong{
+.hero .stat strong {
   margin-right: 15px;
-  color:#171100;
-  font-family: var(--font-heading) ;
-  font-size: 4.4rem ;
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 4.4rem;
   font-weight: 700;
   line-height: 1.23;
 }
-.hero .stat strong:last-child{
-  margin-left: 28px ;
+.hero .stat strong:last-child {
+  margin-left: 28px;
 }
-.popular{
+.popular {
   padding: 65px 0;
-  margin-top:  135px;
+  margin-top: 135px;
 }
-.popular-top .desc{
+.popular-top .desc {
   margin-top: 16px;
   width: 458px;
   font-family: Poppins;
-font-weight: 400;
-font-style: Regular;
-font-size: 1.8rem;
-line-height: 1.667;
-letter-spacing: 0%;
-color: #5F5B53;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.8rem;
+  line-height: 1.667;
+  letter-spacing: 0%;
+  color: #5f5b53;
 }
-.popular-top{
+.popular-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.popular-top .control{
+.popular-top .control {
   display: flex;
   gap: 18px;
 }
-.popular-top .control-btn{
+.popular-top .control-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   background: transparent;
   width: 40px;
-height: 40px;
-color: var(--primary-color);
-border-radius: 50%;
-border: 1px solid var(--primary-color) ;
+  height: 40px;
+  color: var(--primary-color);
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
 }
-.popular-top .control-btn:hover{
+.popular-top .control-btn:hover {
   background: var(--primary-color);
   color: #fff;
   cursor: pointer;
+}
+/* --------------------======================== */
+.popular .course-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+.popular .course-item .thumb {
+  height: 278px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  width: 100%;
+}
+.popular .course-item {
+  border: 1px solid #e2dfe2;
+  border-radius: 12px;
+  background: #fff;
+}
+.popular .course-item:hover {
+   border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgb(0,0,0,0.05);
+}
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .course-item .title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  letter-spacing: 0%;
+}
+.popular .rating .value {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.6rem;
+  margin-left: 6px;
+  line-height: 1.75;
+  letter-spacing: 0%;
+}
+.popular .course-item .desc {
+  margin-top: 6px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  letter-spacing: 0%;
+}
+.popular .course-item .price {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 1.8rem;
+
+  line-height: 1.667;
+  letter-spacing: 0%;
+}
+.popular .course-item .btn-book {
+  border: none;
+}
+.popular .course-item .btn-book:hover {
+  background: var(--primary-color);
 }
