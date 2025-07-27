@@ -454,3 +454,48 @@ line-height: 1.53;
 letter-spacing: 0%;
 
 }
+/* features============================================= */
+.features{
+  margin-top: 135px;
+  padding: 65px 0;
+  
+}
+.features .body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .images{
+  display: flex;
+  gap: 30px;
+}
+.features .images img{
+  object-fit: cover;
+  width: 270px;
+  height: 405px;
+  border-radius: 16px ;
+}
+.features .lower{
+  margin-top: 34px;
+}
+.features .content{
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features .desc{
+  font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 1.6rem;
+line-height: 1.75;
+letter-spacing: 0%;
+
+}
+.features .cta-btn{
+  margin-top: 32px;
+  background: var(--primary-color);
+  width: 137px;
+  height: 50px;
+}
