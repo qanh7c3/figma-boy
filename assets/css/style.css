@@ -32,6 +32,20 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
+/* -----------------------------------------------------------------------------------------
+ */
+ .line-clamp{
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-box-orient:  vertical;
+  overflow: hidden;
+ }
+ .line-clamp.line-2{
+  --line-clamp: 2;
+ }
+ .break-all {
+  word-break: break-all;
+ }
 .header .body-header {
   display: flex;
   align-items: center;
@@ -305,6 +319,7 @@ a {
   width: 100%;
 }
 .popular .course-item {
+  flex: 1;
   border: 1px solid #e2dfe2;
   border-radius: 12px;
   background: #fff;
@@ -364,4 +379,78 @@ a {
 }
 .popular .course-item .btn-book:hover {
   background: var(--primary-color);
+}
+/* ----------------------------------------------- */
+.feedback{
+  margin-top: 135px;
+  padding: 96px 0px;
+  background-color:#2E2100;
+
+}
+.feedback-list{
+  display: flex;
+  overflow: hidden;
+}
+.feedback-item{
+  width: 100%;
+  display: flex;
+  flex-shrink:0;
+}
+.feedback-item .avatar{
+  width: 72px;
+height: 72px;
+border-radius:  50%;
+object-fit: cover;
+}
+.feedback-item .info .member{
+  font-family: Sen;
+  color: #fff;
+font-weight: 700;
+font-style: Bold;
+font-size: 2.4rem;
+margin-top: 18px;
+line-height: 1.41;
+letter-spacing: 0%;
+
+}
+.feedback-item .info .desc{
+  font-family: Poppins;
+font-weight: 400;
+color: #fff9e8;
+font-style: Regular;
+font-size: 1.4rem;
+margin-top: 4px;
+line-height: 1.86;
+letter-spacing: 0%;
+
+}
+.feedback-item .dots{
+  display:flex;
+  gap: 6px;
+  margin-top: 28px;
+}
+.feedback-item .dot{
+  background: #634700;
+  cursor: pointer;
+height: 6px;
+width: 6px;
+border-radius: 50%;
+}
+.feedback-item .dot.active{
+  background-color: var(--primary-color);
+  cursor: default;
+}
+.feedback-item .content{
+  width: 66%;
+  margin-left: auto;
+}
+.feedback-item blockquote{
+  font-family: Poppins;
+font-weight: 400;
+color: #fff9e8;
+font-size: 2.6rem;
+
+line-height: 1.53;
+letter-spacing: 0%;
+
 }
